@@ -1,8 +1,5 @@
-import java.sql.*;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Map;
 
+<<<<<<< HEAD
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -30,11 +27,29 @@ public class Main {
         });
         
         get("/", (request, response) -> {
+=======
+
+public class Main {
+
+  public static void main(String[] args) {
+
+    port(Integer.valueOf(System.getenv("PORT")));
+    staticFileLocation("/public");
+
+    get("/hello", (req, res) -> {
+          RelativisticModel.select();
+          Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
+          return "E=mc^2: 12 GeV = " + m.toString();
+        });
+
+    get("/", (request, response) -> {
+>>>>>>> ddac846759afb2e9d4ad5a8724da5d5210685727
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
             
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
+<<<<<<< HEAD
         
         get("/db", (req, res) -> {
             Connection connection = null;
@@ -75,6 +90,24 @@ public class Main {
             return DriverManager.getConnection(dbUrl, username, password);
         } else {
             return DriverManager.getConnection(dbUrl);
+=======
+
+
+    get("/db", (req, res) -> {
+      Connection connection = null;
+      Map<String, Object> attributes = new HashMap<>();
+      try {
+        connection = DatabaseUrl.extract().getConnection();
+
+        Statement stmt = connection.createStatement();
+        stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
+        stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
+        ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
+
+        ArrayList<String> output = new ArrayList<String>();
+        while (rs.next()) {
+          output.add( "Read from DB: " + rs.getTimestamp("tick"));
+>>>>>>> ddac846759afb2e9d4ad5a8724da5d5210685727
         }
     }
     

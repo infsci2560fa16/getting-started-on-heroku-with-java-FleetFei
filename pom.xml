@@ -28,9 +28,15 @@
       <version>0.1.1</version>
     </dependency>
     <dependency>
+<<<<<<< HEAD
         <groupId>org.jscience</groupId>
         <artifactId>jscience</artifactId>
         <version>4.3.1</version>
+=======
+      <groupId>org.jscience</groupId>
+      <artifactId>jscience</artifactId>
+      <version>4.3.1</version>
+>>>>>>> ddac846759afb2e9d4ad5a8724da5d5210685727
     </dependency>
   </dependencies>
   <build>
