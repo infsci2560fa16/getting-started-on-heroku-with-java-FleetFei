@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>contact us</title>
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="http://cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.css" rel="stylesheet">
+		
+		<link type="text/css" rel="stylesheet" href="StyleSheets/sit-nav.css">
+		
+		<link type="text/css" rel="stylesheet" href="StyleSheets/contact.css" >
+		
+		<script src="js/cheakemail.js"></script>
+		
+		
+		
+		
+		
+	</head>
+	<body>
+		<div style="height: 100;text-decoration: none;color: white;margin-bottom: 50px;">
+			<a href="index.html">Home</a>
+		</div>
+		<div id="contact">
+            <div class="wrapper">
+                <h2>
+                    Contact</h2>
+                <div class="multi-columns">
+               	<div></div>
+                    <form action="/" method="post" id="enquiry" class="cf">
+                        <div class="column">
+                            <input type="text" name="name" placeholder="enter your name" class="tb">
+                            <input type="text" name="email" placeholder="enter your email address" class="tb" value="" onkeyup="check_email($(this).value())">
+                            <input type="text" name="telephone" placeholder="enter your phone number" class="tb">
+                        </div>
+                        <div class="column">
+                            <textarea name="message" placeholder="write your message" class="ta"></textarea>
+                            <input type="submit" value="Send Message" class="bn">
+                        </div>
+                    </form>
+                </div>
+                <p>
+                    If you'd prefer to get in touch directly please feel free to do so<br> 
+                    via email at <a href="qifeish@gmail.com" style="text-decoration: none;">hello:qifeish@gmail.com</a> 
+                    or phone on <b>412-315-1699</b>.<br> 
+                    300 N Dithridge PA211, Pittsburgh, Pennsylvannia.
+                    </p>
+                <p>
+                    All content © 2016 Fei Qi  Website .</p>
+            </div>
+        </div>
+	</body>
+</html>

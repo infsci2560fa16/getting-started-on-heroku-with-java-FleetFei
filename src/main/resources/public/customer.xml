@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<customer category="VIP">
+    <id>1</id>
+    <name>feiq qi</name>
+    <nickname>fei qi</nickname>
+    <password>123</password>
+    <age>18</age>
+    <email>a@gmail.com</email>
+    <job type="student">pitt</job>
+    <billing>421</billing>
+    <address>300N Dithridge</address>
+    <marriage></marriage>
+    
+</customer>
+
+
+
+
+<customer category="ordinary">
+    <id>2</id>
+    <name>qq</name>
+    <nickname>qq</nickname>
+    <password>11</password>
+    <age>18</age>
+    <email>a@gmail.com</email>
+    <job type="student">pitt</job>
+    <billing>421</billing>
+    <address>300N Dithridge</address>
+    <marriage></marriage>
+    
+</customer>
